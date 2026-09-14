@@ -10,7 +10,7 @@ scores how good that generated reply actually is, per-response and overall.
 pip install -r requirements.txt
 
 # Optional but recommended: enables real LLM generation + LLM-as-judge scoring.
-export ANTHROPIC_API_KEY=sk-ant-...
+export GEMINI_API_KEY=...
 
 # Regenerate the dataset (already committed, but reproducible):
 python data/generate_dataset.py
@@ -25,7 +25,7 @@ python main.py run --n 10
 python main.py single "Hi, my order still hasn't arrived after 10 days, please help"
 ```
 
-Without `ANTHROPIC_API_KEY` set, the generator falls back to a clearly-labeled
+Without `GEMINI_API_KEY` set, the generator falls back to a clearly-labeled
 offline stub reply and the evaluator skips the LLM-judge signal — the whole
 pipeline still runs end-to-end and produces `results.json`, just with a
 weaker (non-LLM) generated reply and a reweighted composite score. This was
@@ -80,7 +80,7 @@ not a bare zero-shot prompt.**
   be the natural upgrade for production.
 - The retrieved examples + the new email go into a single few-shot prompt
   (`SYSTEM_PROMPT` + `build_prompt` in `reply_generator.py`) sent to
-  Claude (`claude-sonnet-4-6`).
+  Gemini (`gemini-2.5-flash`) via the Google GenAI SDK.
 
 ## 3. The evaluation system (`eval/`) — the core of this challenge
 
@@ -131,7 +131,9 @@ issue types the generator handles worst).
 
 Built with Claude (Anthropic) as a pair-programming assistant for scaffolding
 the dataset templates, the RAG generator, and the evaluator — including this
-README. All design decisions (RAG over fine-tuning, the four-signal scoring
+README. The generation model used *inside* the running system is Gemini
+(`gemini-2.5-flash`), a separate choice from the assistant used to help write
+the code. All design decisions (RAG over fine-tuning, the four-signal scoring
 approach, the weighting, and the validation method) were made and reviewed
 by the author; the assistant was used for drafting speed under the time limit.
 
