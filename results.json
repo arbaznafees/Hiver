@@ -1,0 +1,1791 @@
+{
+  "overall": {
+    "n_responses": 48,
+    "mean_composite": 0.8869,
+    "median_composite": 0.875,
+    "stdev_composite": 0.0741,
+    "min_composite": 0.5834,
+    "max_composite": 1.0,
+    "mean_by_category": {
+      "angry_complaint": 0.8274,
+      "shipping_delay": 0.9821,
+      "refund_request": 0.9524,
+      "feature_request": 0.875,
+      "technical_issue": 0.7709,
+      "cancellation": 0.8959,
+      "positive_feedback": 0.882,
+      "billing_question": 0.9097
+    },
+    "judge_used": true
+  },
+  "per_response": [
+    {
+      "id": 1,
+      "category": "angry_complaint",
+      "incoming_email": "I am extremely frustrated. This is the SECOND time my desk lamp (#HV-98696) has had an issue and no one has helped me properly. I want a manager to call me today or I'm disputing the charge and leaving a review.\n\nWei",
+      "ideal_reply": "Hi Wei,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-98696 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Wei,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-98696 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        17,
+        21,
+        22
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.2857,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly addresses all aspects of the customer's complaint with empathy, a clear action plan, and appropriate urgency.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8214,
+      "composite_score_pct": 82.1
+    },
+    {
+      "id": 2,
+      "category": "shipping_delay",
+      "incoming_email": "Hello,\n\nMy smart water bottle (#HV-30379) was supposed to arrive last week and it still hasn't shown up. Tracking hasn't updated in 7 days. Can you tell me what's going on?\n\nDiego",
+      "ideal_reply": "Hi Diego,\n\nThanks for flagging this, and sorry for the wait on your smart water bottle. I checked order #HV-30379 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Diego,\n\nThanks for flagging this, and sorry for the wait on your smart water bottle. I checked order #HV-30379 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        20,
+        35,
+        24
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 1.0,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly addresses all aspects of the customer's issue with a clear timeframe, empathetic tone, and actionable next steps.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 1.0,
+      "composite_score_pct": 100.0
+    },
+    {
+      "id": 3,
+      "category": "refund_request",
+      "incoming_email": "Hi,\n\nI ordered a desk lamp (#HV-40495) and it arrived damaged. I'd like a full refund instead of a replacement, it's been 10 days and I just don't trust the product anymore.\n\nThanks,\nEmma",
+      "ideal_reply": "Hi Emma,\n\nI'm really sorry to hear the desk lamp arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-40495; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Emma,\n\nI'm really sorry to hear the desk lamp arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-40495; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        41,
+        11,
+        47
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.7143,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human response, perfectly resolving the customer's specific issue with appropriate empathy, clear timeframes, and zero filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9286,
+      "composite_score_pct": 92.9
+    },
+    {
+      "id": 4,
+      "category": "feature_request",
+      "incoming_email": "Hey, love the laptop sleeve but it would be great if it came in more colors, or had a companion app for tracking usage. Any plans for that?\n\nThanks,\nSofia",
+      "ideal_reply": "Hi Sofia,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the laptop sleeve yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Sofia,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the laptop sleeve yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        6,
+        25,
+        31
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.3333,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply, perfectly addressing the customer's feedback with an appropriate, warm, and concise tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8333,
+      "composite_score_pct": 83.3
+    },
+    {
+      "id": 5,
+      "category": "technical_issue",
+      "incoming_email": "My laptop sleeve stopped working out of nowhere -- won't turn on, tried charging it overnight. Is this a known issue or do I have a defective unit?\n\nTom",
+      "ideal_reply": "Hi Tom,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Tom,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        45,
+        7,
+        8
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.1667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, providing troubleshooting steps and a clear path to a replacement if those fail.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.7917,
+      "composite_score_pct": 79.2
+    },
+    {
+      "id": 6,
+      "category": "feature_request",
+      "incoming_email": "Hey, love the laptop sleeve but it would be great if it came in more colors, or had a companion app for tracking usage. Any plans for that?\n\nThanks,\nNoor",
+      "ideal_reply": "Hi Noor,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the laptop sleeve yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Noor,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the laptop sleeve yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        4,
+        33,
+        25
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.3333,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human reference response, perfectly addressing the product feedback with appropriate warmth, completeness, and conciseness.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8333,
+      "composite_score_pct": 83.3
+    },
+    {
+      "id": 7,
+      "category": "technical_issue",
+      "incoming_email": "My smart water bottle stopped working out of nowhere -- won't turn on, tried charging it overnight. Is this a known issue or do I have a defective unit?\n\nTom",
+      "ideal_reply": "Hi Tom,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Tom,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        5,
+        8,
+        45
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.1667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human reference reply and perfectly addresses the customer's troubleshooting needs while offering a clear path to a replacement.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.7917,
+      "composite_score_pct": 79.2
+    },
+    {
+      "id": 8,
+      "category": "technical_issue",
+      "incoming_email": "My office chair stopped working out of nowhere -- won't turn on, tried charging it overnight. Is this a known issue or do I have a defective unit?\n\nJordan",
+      "ideal_reply": "Hi Jordan,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Jordan,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        5,
+        45,
+        38
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.3333,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human-written reference and perfectly addresses the customer's troubleshooting and replacement needs.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8333,
+      "composite_score_pct": 83.3
+    },
+    {
+      "id": 9,
+      "category": "technical_issue",
+      "incoming_email": "My yoga mat bundle stopped working out of nowhere -- won't turn on, tried charging it overnight. Is this a known issue or do I have a defective unit?\n\nSofia",
+      "ideal_reply": "Hi Sofia,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Sofia,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        38,
+        8,
+        5
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.1667,
+        "structural_quality": 1.0
+      },
+      "judge_detail": {
+        "available": false,
+        "error": "Expecting value: line 1 column 2 (char 1)",
+        "raw_output": "[LLM_CALL_FAILED: Server disconnected without sending a response.]"
+      },
+      "weights_used": {
+        "key_fact_coverage": 0.5,
+        "semantic_similarity": 0.3,
+        "structural_quality": 0.2
+      },
+      "composite_score": 0.5834,
+      "composite_score_pct": 58.3
+    },
+    {
+      "id": 10,
+      "category": "cancellation",
+      "incoming_email": "Hi, please cancel my subscription effective immediately. I don't want to be charged again next month.\n\nEmma",
+      "ideal_reply": "Hi Emma,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Emma,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        18,
+        37,
+        40
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly resolving the cancellation request, confirming no future charges, and maintaining a polite, concise tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 11,
+      "category": "refund_request",
+      "incoming_email": "Hi,\n\nI ordered a smart water bottle (#HV-57052) and it arrived damaged. I'd like a full refund instead of a replacement, it's been 10 days and I just don't trust the product anymore.\n\nThanks,\nPriya",
+      "ideal_reply": "Hi Priya,\n\nI'm really sorry to hear the smart water bottle arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-57052; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Priya,\n\nI'm really sorry to hear the smart water bottle arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-57052; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        44,
+        13,
+        3
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.7143,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human reference reply and perfectly addresses the customer's request with empathy, correct details, and clear next steps.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9286,
+      "composite_score_pct": 92.9
+    },
+    {
+      "id": 12,
+      "category": "positive_feedback",
+      "incoming_email": "Just a quick note -- my yoga mat bundle arrived early and works great. Whoever packed it also included a nice handwritten note, made my day. Wanted to pass along the thanks.\n\nAisha",
+      "ideal_reply": "Hi Aisha,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the yoga mat bundle is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Aisha,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the yoga mat bundle is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        16,
+        46,
+        43
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human reference and perfectly captures the warm, appreciative tone while acknowledging the customer's positive feedback.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 13,
+      "category": "refund_request",
+      "incoming_email": "Hi,\n\nI ordered a smart water bottle (#HV-92397) and it arrived damaged. I'd like a full refund instead of a replacement, it's been 3 days and I just don't trust the product anymore.\n\nThanks,\nAlex",
+      "ideal_reply": "Hi Alex,\n\nI'm really sorry to hear the smart water bottle arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-92397; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Alex,\n\nI'm really sorry to hear the smart water bottle arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-92397; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        44,
+        11,
+        47
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.8571,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly resolving the issue with accurate details, appropriate empathy, and clear timeframes.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9643,
+      "composite_score_pct": 96.4
+    },
+    {
+      "id": 14,
+      "category": "positive_feedback",
+      "incoming_email": "Just a quick note -- my office chair arrived early and works great. Whoever packed it also included a nice handwritten note, made my day. Wanted to pass along the thanks.\n\nLiam",
+      "ideal_reply": "Hi Liam,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the office chair is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Liam,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the office chair is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        16,
+        46,
+        43
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly matching the warm and appreciative tone of the customer's positive feedback.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 15,
+      "category": "positive_feedback",
+      "incoming_email": "Just a quick note -- my wireless earbuds arrived early and works great. Whoever packed it also included a nice handwritten note, made my day. Wanted to pass along the thanks.\n\nRaj",
+      "ideal_reply": "Hi Raj,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the wireless earbuds is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Raj,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the wireless earbuds is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        43,
+        16,
+        46
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly matches the positive tone, acknowledges the customer's feedback warmly, and provides a clear path for future contact.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 16,
+      "category": "positive_feedback",
+      "incoming_email": "Just a quick note -- my office chair arrived early and works great. Whoever packed it also included a nice handwritten note, made my day. Wanted to pass along the thanks.\n\nAlex",
+      "ideal_reply": "Hi Alex,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the office chair is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Alex,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the office chair is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        14,
+        46,
+        43
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly capturing the warm, appreciative tone while acknowledging the positive feedback without unnecessary filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 17,
+      "category": "angry_complaint",
+      "incoming_email": "I am extremely frustrated. This is the SECOND time my office chair (#HV-64987) has had an issue and no one has helped me properly. I want a manager to call me today or I'm disputing the charge and leaving a review.\n\nLiam",
+      "ideal_reply": "Hi Liam,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-64987 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Liam,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-64987 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        28,
+        21,
+        1
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.2857,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human-crafted reply, perfectly addressing the escalation, callback, and refund while maintaining a strong, empathetic tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8214,
+      "composite_score_pct": 82.1
+    },
+    {
+      "id": 18,
+      "category": "cancellation",
+      "incoming_email": "Hi, please cancel my subscription effective immediately. I don't want to be charged again next month.\n\nJordan",
+      "ideal_reply": "Hi Jordan,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Jordan,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        37,
+        40,
+        10
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly resolving the cancellation request while maintaining a helpful, warm, and concise tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 19,
+      "category": "billing_question",
+      "incoming_email": "Hi team,\n\nI noticed a charge of $12.5 on my card that I don't recognize. I haven't ordered anything recently. Can you explain what this is for?\n\nRegards,\nJordan",
+      "ideal_reply": "Hi Jordan,\n\nThanks for reaching out about this. A $12.5 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Jordan,\n\nThanks for reaching out about this. A $12.5 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        34,
+        48,
+        30
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human-written reference and perfectly handles the customer's inquiry by offering logical possibilities and asking for the necessary details to investigate further.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 20,
+      "category": "shipping_delay",
+      "incoming_email": "Hello,\n\nMy smart water bottle (#HV-13478) was supposed to arrive last week and it still hasn't shown up. Tracking hasn't updated in 7 days. Can you tell me what's going on?\n\nDiego",
+      "ideal_reply": "Hi Diego,\n\nThanks for flagging this, and sorry for the wait on your smart water bottle. I checked order #HV-13478 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Diego,\n\nThanks for flagging this, and sorry for the wait on your smart water bottle. I checked order #HV-13478 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        2,
+        35,
+        24
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 1.0,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply, perfectly addressing the customer's issue with accurate order details, a clear timeline, appropriate empathy, and no unnecessary filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 1.0,
+      "composite_score_pct": 100.0
+    },
+    {
+      "id": 21,
+      "category": "angry_complaint",
+      "incoming_email": "I am extremely frustrated. This is the SECOND time my wireless earbuds (#HV-80284) has had an issue and no one has helped me properly. I want a manager to call me today or I'm disputing the charge and leaving a review.\n\nAlex",
+      "ideal_reply": "Hi Alex,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-80284 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Alex,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-80284 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        17,
+        1,
+        22
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.4286,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly addresses all aspects of the customer's complaint with appropriate empathy, specific actions, and a clear timeframe.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8571,
+      "composite_score_pct": 85.7
+    },
+    {
+      "id": 22,
+      "category": "angry_complaint",
+      "incoming_email": "I am extremely frustrated. This is the SECOND time my yoga mat bundle (#HV-23434) has had an issue and no one has helped me properly. I want a manager to call me today or I'm disputing the charge and leaving a review.\n\nTom",
+      "ideal_reply": "Hi Tom,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-23434 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Tom,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-23434 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        17,
+        21,
+        1
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.2857,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly addressing the customer's urgent demands with immediate escalation, a callback timeframe, and a refund.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8214,
+      "composite_score_pct": 82.1
+    },
+    {
+      "id": 23,
+      "category": "billing_question",
+      "incoming_email": "Hi team,\n\nI noticed a charge of $89.99 on my card that I don't recognize. I haven't ordered anything recently. Can you explain what this is for?\n\nRegards,\nRaj",
+      "ideal_reply": "Hi Raj,\n\nThanks for reaching out about this. A $89.99 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Raj,\n\nThanks for reaching out about this. A $89.99 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        30,
+        32,
+        19
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply, perfectly addressing the customer's issue with accurate next steps, a warm tone, and no unnecessary filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 24,
+      "category": "shipping_delay",
+      "incoming_email": "Hello,\n\nMy office chair (#HV-13278) was supposed to arrive last week and it still hasn't shown up. Tracking hasn't updated in 4 days. Can you tell me what's going on?\n\nTom",
+      "ideal_reply": "Hi Tom,\n\nThanks for flagging this, and sorry for the wait on your office chair. I checked order #HV-13278 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Tom,\n\nThanks for flagging this, and sorry for the wait on your office chair. I checked order #HV-13278 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        26,
+        2,
+        20
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.8571,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly addresses all aspects of the customer's issue with accuracy, empathy, and clear next steps.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9643,
+      "composite_score_pct": 96.4
+    },
+    {
+      "id": 25,
+      "category": "feature_request",
+      "incoming_email": "Hey, love the wireless earbuds but it would be great if it came in more colors, or had a companion app for tracking usage. Any plans for that?\n\nThanks,\nSofia",
+      "ideal_reply": "Hi Sofia,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the wireless earbuds yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Sofia,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the wireless earbuds yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        4,
+        6,
+        31
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human-written reference and perfectly addresses the customer's feature request with a warm, accurate, and concise response.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 26,
+      "category": "shipping_delay",
+      "incoming_email": "Hello,\n\nMy laptop sleeve (#HV-81426) was supposed to arrive last week and it still hasn't shown up. Tracking hasn't updated in 7 days. Can you tell me what's going on?\n\nRaj",
+      "ideal_reply": "Hi Raj,\n\nThanks for flagging this, and sorry for the wait on your laptop sleeve. I checked order #HV-81426 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Raj,\n\nThanks for flagging this, and sorry for the wait on your laptop sleeve. I checked order #HV-81426 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        24,
+        2,
+        20
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.7143,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly addressing the customer's issue with accurate information, a clear timeframe, appropriate empathy, and no unnecessary filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9286,
+      "composite_score_pct": 92.9
+    },
+    {
+      "id": 27,
+      "category": "angry_complaint",
+      "incoming_email": "I am extremely frustrated. This is the SECOND time my noise-cancelling headphones (#HV-21395) has had an issue and no one has helped me properly. I want a manager to call me today or I'm disputing the charge and leaving a review.\n\nNoor",
+      "ideal_reply": "Hi Noor,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-21395 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Noor,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-21395 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        28,
+        17,
+        21
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.2857,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly resolves the customer's urgent issue with appropriate empathy, clear actions, and a specific timeframe.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8214,
+      "composite_score_pct": 82.1
+    },
+    {
+      "id": 28,
+      "category": "angry_complaint",
+      "incoming_email": "I am extremely frustrated. This is the SECOND time my noise-cancelling headphones (#HV-42098) has had an issue and no one has helped me properly. I want a manager to call me today or I'm disputing the charge and leaving a review.\n\nLiam",
+      "ideal_reply": "Hi Liam,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-42098 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Liam,\n\nI hear you, and I'm sorry we've let you down twice on the same order -- that's a fair thing to be upset about, and I don't want to just apologize without fixing it. I'm escalating order #HV-42098 to our team lead right now and you'll get a direct call within the next few hours, not another email queue. In the meantime I've also queued a full refund as a safety net regardless of what we find. You shouldn't have to chase us on this.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        27,
+        17,
+        21
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.2857,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly addressing the customer's urgent demands with immediate escalation, a promised callback timeframe, and a full refund.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8214,
+      "composite_score_pct": 82.1
+    },
+    {
+      "id": 29,
+      "category": "feature_request",
+      "incoming_email": "Hey, love the desk lamp but it would be great if it came in more colors, or had a companion app for tracking usage. Any plans for that?\n\nThanks,\nEmma",
+      "ideal_reply": "Hi Emma,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the desk lamp yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Emma,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the desk lamp yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        33,
+        4,
+        6
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human-written reference reply, perfectly addressing the customer's feature suggestions with an appropriate, warm, and concise tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 30,
+      "category": "billing_question",
+      "incoming_email": "Hi team,\n\nI noticed a charge of $89.99 on my card that I don't recognize. I haven't ordered anything recently. Can you explain what this is for?\n\nRegards,\nDiego",
+      "ideal_reply": "Hi Diego,\n\nThanks for reaching out about this. A $89.99 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Diego,\n\nThanks for reaching out about this. A $89.99 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        32,
+        23,
+        34
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.8333,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly addresses the customer's issue with a clear and helpful next step.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9583,
+      "composite_score_pct": 95.8
+    },
+    {
+      "id": 31,
+      "category": "feature_request",
+      "incoming_email": "Hey, love the office chair but it would be great if it came in more colors, or had a companion app for tracking usage. Any plans for that?\n\nThanks,\nAisha",
+      "ideal_reply": "Hi Aisha,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the office chair yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Aisha,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the office chair yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        4,
+        6,
+        25
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human-written reference reply, perfectly addressing the customer's feature requests with a warm, professional, and concise tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 32,
+      "category": "billing_question",
+      "incoming_email": "Hi team,\n\nI noticed a charge of $89.99 on my card that I don't recognize. I haven't ordered anything recently. Can you explain what this is for?\n\nRegards,\nNoor",
+      "ideal_reply": "Hi Noor,\n\nThanks for reaching out about this. A $89.99 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Noor,\n\nThanks for reaching out about this. A $89.99 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        30,
+        23,
+        19
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply, perfectly addressing the customer's issue while requesting the necessary verification details in a warm, concise manner.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 33,
+      "category": "feature_request",
+      "incoming_email": "Hey, love the standing desk but it would be great if it came in more colors, or had a companion app for tracking usage. Any plans for that?\n\nThanks,\nNoor",
+      "ideal_reply": "Hi Noor,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the standing desk yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Noor,\n\nThanks so much for the suggestion -- feedback like this genuinely shapes our roadmap. I don't have a specific timeline to promise on more colors or an app for the standing desk yet, but I've logged this with our product team under active requests. If either ships, I'll make sure you're notified since you're already a customer.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        6,
+        29,
+        4
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly addresses the customer's feature suggestions with a warm, professional, and comprehensive tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 34,
+      "category": "billing_question",
+      "incoming_email": "Hi team,\n\nI noticed a charge of $12.5 on my card that I don't recognize. I haven't ordered anything recently. Can you explain what this is for?\n\nRegards,\nDiego",
+      "ideal_reply": "Hi Diego,\n\nThanks for reaching out about this. A $12.5 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Diego,\n\nThanks for reaching out about this. A $12.5 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        19,
+        30,
+        48
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly addressing the customer's unrecognized charge by asking for the necessary verification details with a professional, helpful tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 35,
+      "category": "shipping_delay",
+      "incoming_email": "Hello,\n\nMy smart water bottle (#HV-42098) was supposed to arrive last week and it still hasn't shown up. Tracking hasn't updated in 7 days. Can you tell me what's going on?\n\nFatima",
+      "ideal_reply": "Hi Fatima,\n\nThanks for flagging this, and sorry for the wait on your smart water bottle. I checked order #HV-42098 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Fatima,\n\nThanks for flagging this, and sorry for the wait on your smart water bottle. I checked order #HV-42098 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        2,
+        20,
+        24
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 1.0,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly addressing the customer's issue with accurate order details, a clear timeline, appropriate empathy, and a concise resolution plan.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 1.0,
+      "composite_score_pct": 100.0
+    },
+    {
+      "id": 36,
+      "category": "cancellation",
+      "incoming_email": "Hi, please cancel my subscription effective immediately. I don't want to be charged again next month.\n\nPriya",
+      "ideal_reply": "Hi Priya,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Priya,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        18,
+        37,
+        40
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly handles the cancellation request with clear terms, a polite tone, and no unnecessary filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 37,
+      "category": "cancellation",
+      "incoming_email": "Hi, please cancel my subscription effective immediately. I don't want to be charged again next month.\n\nAlex",
+      "ideal_reply": "Hi Alex,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Alex,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        18,
+        40,
+        10
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly resolving the cancellation request while maintaining a helpful, warm, and concise tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 38,
+      "category": "technical_issue",
+      "incoming_email": "My standing desk stopped working out of nowhere -- won't turn on, tried charging it overnight. Is this a known issue or do I have a defective unit?\n\nSofia",
+      "ideal_reply": "Hi Sofia,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Sofia,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        9,
+        8,
+        5
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.1667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly handles troubleshooting steps, potential replacement, and tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.7917,
+      "composite_score_pct": 79.2
+    },
+    {
+      "id": 39,
+      "category": "shipping_delay",
+      "incoming_email": "Hello,\n\nMy wireless earbuds (#HV-48427) was supposed to arrive last week and it still hasn't shown up. Tracking hasn't updated in 2 days. Can you tell me what's going on?\n\nCarlos",
+      "ideal_reply": "Hi Carlos,\n\nThanks for flagging this, and sorry for the wait on your wireless earbuds. I checked order #HV-48427 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Carlos,\n\nThanks for flagging this, and sorry for the wait on your wireless earbuds. I checked order #HV-48427 and it's currently sitting with the carrier due to a regional delay -- it's not lost, but the tracking update lagging behind is on us to communicate better. Updated estimated delivery is within 3 business days. If it hasn't arrived by then, reply here and I'll expedite a replacement or refund, your call.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        24,
+        26,
+        2
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 1.0,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the human reference reply and perfectly addresses all aspects of the customer's issue with accuracy, empathy, and clarity.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 1.0,
+      "composite_score_pct": 100.0
+    },
+    {
+      "id": 40,
+      "category": "cancellation",
+      "incoming_email": "Hi, please cancel my subscription effective immediately. I don't want to be charged again next month.\n\nRaj",
+      "ideal_reply": "Hi Raj,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Raj,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        18,
+        37,
+        10
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly handles the cancellation request with the correct policy, completeness, and a polite, concise tone.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 41,
+      "category": "refund_request",
+      "incoming_email": "Hi,\n\nI ordered a standing desk (#HV-40495) and it arrived damaged. I'd like a full refund instead of a replacement, it's been 5 days and I just don't trust the product anymore.\n\nThanks,\nNoor",
+      "ideal_reply": "Hi Noor,\n\nI'm really sorry to hear the standing desk arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-40495; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Noor,\n\nI'm really sorry to hear the standing desk arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-40495; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        3,
+        47,
+        44
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.8571,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply perfectly addresses all aspects of the customer's request with accurate details, appropriate empathy, and clear next steps without any unnecessary filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9643,
+      "composite_score_pct": 96.4
+    },
+    {
+      "id": 42,
+      "category": "cancellation",
+      "incoming_email": "Hi, please cancel my subscription effective immediately. I don't want to be charged again next month.\n\nFatima",
+      "ideal_reply": "Hi Fatima,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Fatima,\n\nDone -- I've cancelled your subscription and confirmed no further charges will go through. You'll still have access until the end of your current billing period, but it won't auto-renew after that. If this was because something wasn't working for you, I'd genuinely like to know so we can improve, but no pressure to reply.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        18,
+        37,
+        40
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.6667,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human response, perfectly resolving the customer's request with accurate policy, complete information, a warm tone, and concise phrasing.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9167,
+      "composite_score_pct": 91.7
+    },
+    {
+      "id": 43,
+      "category": "positive_feedback",
+      "incoming_email": "Just a quick note -- my wireless earbuds arrived early and works great. Whoever packed it also included a nice handwritten note, made my day. Wanted to pass along the thanks.\n\nSofia",
+      "ideal_reply": "Hi Sofia,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the wireless earbuds is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Sofia,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the wireless earbuds is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        15,
+        16,
+        46
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply, perfectly matching the warm and appreciative tone required for positive customer feedback.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    },
+    {
+      "id": 44,
+      "category": "refund_request",
+      "incoming_email": "Hi,\n\nI ordered a smart water bottle (#HV-15695) and it arrived damaged. I'd like a full refund instead of a replacement, it's been 5 days and I just don't trust the product anymore.\n\nThanks,\nSofia",
+      "ideal_reply": "Hi Sofia,\n\nI'm really sorry to hear the smart water bottle arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-15695; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Sofia,\n\nI'm really sorry to hear the smart water bottle arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-15695; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        13,
+        11,
+        47
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.8571,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly resolving the issue with accurate details, appropriate empathy, and clear next steps without unnecessary filler.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9643,
+      "composite_score_pct": 96.4
+    },
+    {
+      "id": 45,
+      "category": "technical_issue",
+      "incoming_email": "My laptop sleeve stopped working out of nowhere -- won't turn on, tried charging it overnight. Is this a known issue or do I have a defective unit?\n\nDiego",
+      "ideal_reply": "Hi Diego,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Diego,\n\nSorry for the trouble -- let's get this sorted. First, can you try holding the power button for 10 seconds to force a reset, then plug it into a different cable/outlet if you have one? This resolves it in most cases. If it still won't turn on after that, it does sound like a defective unit and I'll send a free replacement right away, just confirm and I'll get that moving.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        5,
+        8,
+        38
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.3333,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference human reply, perfectly addressing the customer's troubleshooting steps and offering a clear path to a replacement if those fail.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8333,
+      "composite_score_pct": 83.3
+    },
+    {
+      "id": 46,
+      "category": "positive_feedback",
+      "incoming_email": "Just a quick note -- my laptop sleeve arrived early and works great. Whoever packed it also included a nice handwritten note, made my day. Wanted to pass along the thanks.\n\nTom",
+      "ideal_reply": "Hi Tom,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the laptop sleeve is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Tom,\n\nThis absolutely made our day too -- I'll pass your note along to the fulfillment team, they'll love hearing it landed well. Really glad the laptop sleeve is working out for you. If you ever need anything down the line, just reply here.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        16,
+        43,
+        14
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.3333,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply, perfectly matching the positive tone and appropriately acknowledging the customer's compliment.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.8333,
+      "composite_score_pct": 83.3
+    },
+    {
+      "id": 47,
+      "category": "refund_request",
+      "incoming_email": "Hi,\n\nI ordered a office chair (#HV-95181) and it arrived damaged. I'd like a full refund instead of a replacement, it's been 5 days and I just don't trust the product anymore.\n\nThanks,\nJordan",
+      "ideal_reply": "Hi Jordan,\n\nI'm really sorry to hear the office chair arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-95181; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Jordan,\n\nI'm really sorry to hear the office chair arrived damaged -- that's not the experience we want you to have. I've gone ahead and processed a full refund for order #HV-95181; you should see it back on your original payment method within 5-7 business days. No need to return the item, please just recycle or dispose of it. Let me know if the refund doesn't show up by then.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        41,
+        44,
+        13
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.8571,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply and perfectly addresses the customer's request for a full refund with appropriate empathy and clear next steps.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.9643,
+      "composite_score_pct": 96.4
+    },
+    {
+      "id": 48,
+      "category": "billing_question",
+      "incoming_email": "Hi team,\n\nI noticed a charge of $49.0 on my card that I don't recognize. I haven't ordered anything recently. Can you explain what this is for?\n\nRegards,\nJordan",
+      "ideal_reply": "Hi Jordan,\n\nThanks for reaching out about this. A $49.0 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "generated_reply": "Hi Jordan,\n\nThanks for reaching out about this. A $49.0 charge usually corresponds to either a subscription renewal or a split-payment installment on a past order -- I'd like to look into your account specifically to confirm which one it is. Could you reply with the email address or last 4 digits of the card used, so I can pull up the exact transaction? I'll get this cleared up quickly once I can see it.\n\nBest,\nSupport Team",
+      "retrieved_ids": [
+        19,
+        34,
+        30
+      ],
+      "signals": {
+        "semantic_similarity": 1.0,
+        "key_fact_coverage": 0.5,
+        "structural_quality": 1.0,
+        "judge_score": 1.0
+      },
+      "judge_detail": {
+        "available": true,
+        "raw_scores": {
+          "correctness": 5,
+          "completeness": 5,
+          "tone": 5,
+          "conciseness": 5
+        },
+        "rationale": "The AI-generated reply is identical to the reference reply, perfectly addressing the customer's issue while maintaining a helpful tone and gathering necessary information.",
+        "normalized": 1.0
+      },
+      "weights_used": {
+        "judge_score": 0.5,
+        "key_fact_coverage": 0.25,
+        "semantic_similarity": 0.15,
+        "structural_quality": 0.1
+      },
+      "composite_score": 0.875,
+      "composite_score_pct": 87.5
+    }
+  ]
+}

@@ -10,7 +10,11 @@ scores how good that generated reply actually is, per-response and overall.
 pip install -r requirements.txt
 
 # Optional but recommended: enables real LLM generation + LLM-as-judge scoring.
-export GEMINI_API_KEY=...
+# Linux / macOS
+export GEMINI_API_KEY="your_api_key_here"
+
+# Windows (PowerShell)
+$env:GEMINI_API_KEY="your_api_key_here"
 
 # Regenerate the dataset (already committed, but reproducible):
 python data/generate_dataset.py
@@ -31,6 +35,13 @@ pipeline still runs end-to-end and produces `results.json`, just with a
 weaker (non-LLM) generated reply and a reweighted composite score. This was
 a deliberate choice so the submission is runnable by anyone grading it,
 with or without a key.
+
+**Note on runtime:** the Gemini free tier caps at 15 requests/minute, and
+each email uses 2 calls (generate + judge). `generator/llm_client.py`
+self-paces calls and auto-retries on 429 with the server's suggested
+backoff, so a full 48-email run takes roughly 8-10 minutes rather than
+failing partway through. Use `python main.py run --n 10` for a faster
+partial run if you just want to sanity-check the pipeline.
 
 ## 1. The dataset (`data/`)
 
@@ -80,7 +91,7 @@ not a bare zero-shot prompt.**
   be the natural upgrade for production.
 - The retrieved examples + the new email go into a single few-shot prompt
   (`SYSTEM_PROMPT` + `build_prompt` in `reply_generator.py`) sent to
-  Gemini (`gemini-2.5-flash`) via the Google GenAI SDK.
+  Gemini (`gemini-3.5-flash-lite`) via the Google GenAI SDK.
 
 ## 3. The evaluation system (`eval/`) — the core of this challenge
 
@@ -121,6 +132,21 @@ held-out sample 1-5 and checking Spearman correlation with the composite
 score, to confirm the automatic signals track human judgment beyond these
 three hand-picked cases.
 
+**A limitation this run surfaced, stated plainly:** on the actual 48-email
+run (`results.json`), the mean composite score came out to ~89%, and most
+generated replies are near character-for-character identical to the
+reference reply. That's not the model being unrealistically good — it's
+the dataset being too formulaic. Because same-category examples only vary
+by name/order-ID/product, the retrieved few-shot examples are near-
+duplicates of the held-out reference, so the generator can reconstruct it
+by substitution rather than genuinely generalizing to a novel complaint.
+The eval system is doing its job correctly here (identical-to-reference
+really is a 5/5 reply), but the *dataset* isn't stress-testing generalization
+the way a more varied, less templated set of past tickets would. With more
+time, the fix is a dataset where same-category emails differ in structure
+and phrasing, not just named entities -- that would make a high composite
+score actually mean something about generalization, not retrieval quality.
+
 **Reporting:** `python main.py run` writes `results.json` containing
 every per-response signal breakdown, the judge's rationale, and the
 composite, plus an `overall` block with mean/median/stdev/min/max
@@ -132,7 +158,7 @@ issue types the generator handles worst).
 Built with Claude (Anthropic) as a pair-programming assistant for scaffolding
 the dataset templates, the RAG generator, and the evaluator — including this
 README. The generation model used *inside* the running system is Gemini
-(`gemini-2.5-flash`), a separate choice from the assistant used to help write
+(`gemini-3.5-flash-lite`), a separate choice from the assistant used to help write
 the code. All design decisions (RAG over fine-tuning, the four-signal scoring
 approach, the weighting, and the validation method) were made and reviewed
 by the author; the assistant was used for drafting speed under the time limit.
