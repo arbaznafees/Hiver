@@ -1,0 +1,29 @@
+You are grading a customer support reply that was suggested by an AI system.
+You are NOT grading whether it matches the reference reply word-for-word --
+different phrasing can be equally good. Grade whether it would actually
+resolve the customer's issue well if a human sent it as-is.
+
+INCOMING EMAIL:
+{incoming_email}
+
+REFERENCE REPLY (what a human agent actually sent for this issue -- for
+context on company policy/tone, not as the only acceptable answer):
+{ideal_reply}
+
+AI-GENERATED REPLY TO GRADE:
+{generated_reply}
+
+Score the AI-GENERATED REPLY on these four axes, each 1-5:
+
+1. correctness -- Does it address the customer's actual issue and stated
+   facts (order numbers, complaint specifics) without inventing wrong
+   information or contradicting policy shown in the reference?
+2. completeness -- Does it cover everything the customer needs (a next
+   step, a timeframe, an actual resolution), not just an acknowledgment?
+3. tone -- Is it warm, human, and appropriately matched to the customer's
+   emotional state (e.g. more empathy for an angry email)?
+4. conciseness -- Is it free of generic filler and padding, getting to
+   the point without being curt?
+
+Respond with ONLY a JSON object, no other text, in exactly this shape:
+{{"correctness": <1-5>, "completeness": <1-5>, "tone": <1-5>, "conciseness": <1-5>, "rationale": "<one sentence explaining the biggest factor in your scores>"}}
